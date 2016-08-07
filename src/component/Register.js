@@ -90,14 +90,11 @@ export default class Register extends Component {
       xhr.send(mappedData);
 
       xhr.onreadystatechange = function() {
-          if(xhr.readyState === XMLHttpRequest.DONE) {
-            if(xhr.status === 200
-              && /Submit another response/.test(xhr.responseText)) {
-                this.setState({ submission: { status: 'success', errorMsg } });
-            } else {
-                this.setState({ submission:
-                  { status: 'error', errorMsg: ['ระบบขัดข้อง'] }});
-            }
+          if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+              this.setState({ submission: { status: 'success', errorMsg } });
+          } else {
+              this.setState({ submission:
+                { status: 'error', errorMsg: ['ระบบขัดข้อง'] }});
           }
       }.bind(this);
     }
