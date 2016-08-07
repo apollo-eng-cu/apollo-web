@@ -43,8 +43,8 @@ export default class Register extends Component {
       , msg: 'ห้ามเว้นเพศ'
       }
     , sid:
-      { pattern: /^\d{8}21$/
-      , msg: 'ต้องใส่รหัสนิสิตเป็นเลข 8 หลัก ตามด้วยรหัสคณะ(21)'
+      { pattern: /^\d{8}$/
+      , msg: 'ต้องใส่รหัสนิสิตเป็นเลข 8 หลัก (ไม่ต้องมีรหัสคณะ)'
       }
     }
 
