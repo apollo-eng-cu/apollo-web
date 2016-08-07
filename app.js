@@ -4,10 +4,12 @@ var app = express();
 app.use('/static', express.static('dist'));
 app.use('/asset', express.static('dist/asset'));
 
+app.set('port', (process.env.PORT || 5000));
+
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.listen(80, function () {
-  console.log('server is running');
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
