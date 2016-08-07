@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "website for apollo",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
+    "dev": "node server.js",
     "lint": "eslint src"
   },
   "repository": {
