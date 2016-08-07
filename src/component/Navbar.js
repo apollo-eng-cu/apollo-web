@@ -6,14 +6,13 @@ const Navbar = () => (
     <div className="container">
       <Logo />
       <Tabs />
-      <Toggle />
     </div>
   </nav>
 );
 
 const Logo = () => (
   <div className="nav-left">
-    <a className="nav-item" href="#header" data-scroll>
+    <a className="nav-item is-brand" href="#header" data-scroll>
       <img src={logoImg}></img>
     </a>
   </div>
@@ -36,12 +35,5 @@ const Tabs = () => (
   </div>
 );
 
-const Toggle = () => (
-  <span className="nav-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-);
 
 export default Navbar

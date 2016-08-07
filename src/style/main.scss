@@ -9,6 +9,12 @@ $primary: #E21B5A;
 
 nav {
   opacity: 0.95;
+
+  .is-brand {
+    @include touch {
+      margin: 0 auto;
+    }
+  }
 }
 
 .container {
