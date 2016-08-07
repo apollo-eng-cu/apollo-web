@@ -94,6 +94,7 @@ export default class Register extends Component {
             if(xhr.status === 200) {
               this.setState({ submission: { status: 'success', errorMsg } });
             } else {
+              console.log(xhr.response);
               this.setState({ submission:
                 { status: 'error', errorMsg: ['ระบบขัดข้อง'] }});
             }
