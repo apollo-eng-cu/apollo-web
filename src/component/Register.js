@@ -73,19 +73,12 @@ export default class Register extends Component {
 
     if(status === 'requesting') {
       const xhr = new XMLHttpRequest();
-      const formId = '1FAIpQLSfR4AXvzNWS4f9wm8J5xjWmSVcgp0Q1emRAsh8Ceb_KWJ4Dkw'
-      xhr.open(
-        'POST',
-        `https://docs.google.com/forms/d/e/${formId}/formResponse`,
-        true);
-
+      xhr.open('POST', '/form', true);
       xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=utf-8');
 
       const mappedData = Object.keys(data)
         .map(key => `${inputId[key]}=${encodeURI(data[key])}`)
         .join('&');
-
-      console.log(mappedData);
 
       xhr.send(mappedData);
 
@@ -94,7 +87,6 @@ export default class Register extends Component {
             if(xhr.status === 200) {
               this.setState({ submission: { status: 'success', errorMsg } });
             } else {
-              console.log(xhr.response);
               this.setState({ submission:
                 { status: 'error', errorMsg: ['ระบบขัดข้อง'] }});
             }
