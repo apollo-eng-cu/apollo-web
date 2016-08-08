@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 
 app.post('/form', function(req, res) {
   submitGoogleForm(req.body, function(err, httpRes, body) {
-    if(/เราได้บันทึกคำตอบของคุณไว้แล้ว/.test(body)) {
+    if(/freebirdFormviewerViewResponseConfirmationMessage/.test(body)) {
       res.status(200).send();
     } else {
       res.status(500).send();
