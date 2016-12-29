@@ -40,6 +40,15 @@ nav {
   -o-background-size: cover;
   background-size: cover;
 
+  @include desktop {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+  background-color: $black;
+
   .container {
     padding: 60px;
     text-align: center;

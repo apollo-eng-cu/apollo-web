@@ -4,11 +4,10 @@ const Header = () => (
   <section className="hero is-primary is-fullheight" id="header">
     <div className="hero-body">
       <div className="container is-filter">
-        <h2 className="subtitle">Apollo Event #1</h2>
-        <h1 className="title">"พร้อมยัง ?"</h1>
+        <h2 className="subtitle">Apollo Event #2</h2>
+        <h1 className="title">"จบแล้ว... ไงต่อ?"</h1>
         <div className="content">
-          <p>จะเรียนจบแล้ว จะฝึกงานแล้ว จะเลือกภาคแล้ว พร้อมกันยัง ?
-          รู้หรือยังว่าอยากเลือกเดินทางไหน ต้องเตรียมตัวยังไงบ้าง ?</p>
+          <p>เรียนโท ทำงาน ประสบการณ์จากพี่นายช่าง</p>
         </div>
         <br />
         <div>
