@@ -7,6 +7,7 @@ export default class Register extends Component {
       , lastName: ''
       , email: ''
       , telNum: ''
+      , major: ''
       , year: ''
       , sex: ''
       , sid: ''
@@ -36,6 +37,10 @@ export default class Register extends Component {
       { pattern: /^0\d{9}$/
       , msg: 'ต้องใส่เบอร์โทรศัพท์เป็นเลข 10 หลัก'
       }
+    , major:
+      { pattern: /^.+$/
+      , msg: 'ห้ามเว้นภาควิชา'
+      }
     , year:
       { pattern: /^.+$/
       , msg: 'ห้ามเว้นชั้นปี'
@@ -64,6 +69,7 @@ export default class Register extends Component {
       , lastName: 'entry.1913925643'
       , email: 'entry.1501382030'
       , telNum: 'entry.1308805906'
+      , major: 'entry.1559944590'
       , year: 'entry.186170165'
       , sex: 'entry.616671974'
       , sid: 'entry.993297866'
@@ -138,6 +144,9 @@ export default class Register extends Component {
             <TextInput
               label="เบอร์โทรศัพท์"
               update={this.update.bind(this, 'telNum')} />
+            <TextInput
+              label="ภาควิชา"
+              update={this.update.bind(this, 'major')} />
           </div>
 
           <div className="columns">

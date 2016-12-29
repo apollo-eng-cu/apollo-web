@@ -20304,6 +20304,7 @@
 	        lastName: '',
 	        email: '',
 	        telNum: '',
+	        major: '',
 	        year: '',
 	        sex: '',
 	        sid: '',
@@ -20324,6 +20325,9 @@
 	      },
 	      telNum: { pattern: /^0\d{9}$/,
 	        msg: 'ต้องใส่เบอร์โทรศัพท์เป็นเลข 10 หลัก'
+	      },
+	      major: { pattern: /^.+$/,
+	        msg: 'ห้ามเว้นภาควิชา'
 	      },
 	      year: { pattern: /^.+$/,
 	        msg: 'ห้ามเว้นชั้นปี'
@@ -20352,6 +20356,7 @@
 	        lastName: 'entry.1913925643',
 	        email: 'entry.1501382030',
 	        telNum: 'entry.1308805906',
+	        major: 'entry.1559944590',
 	        year: 'entry.186170165',
 	        sex: 'entry.616671974',
 	        sid: 'entry.993297866',
@@ -20442,7 +20447,10 @@
 	                update: this.update.bind(this, 'email') }),
 	              _react2.default.createElement(TextInput, {
 	                label: '\u0E40\u0E1A\u0E2D\u0E23\u0E4C\u0E42\u0E17\u0E23\u0E28\u0E31\u0E1E\u0E17\u0E4C',
-	                update: this.update.bind(this, 'telNum') })
+	                update: this.update.bind(this, 'telNum') }),
+	              _react2.default.createElement(TextInput, {
+	                label: '\u0E20\u0E32\u0E04\u0E27\u0E34\u0E0A\u0E32',
+	                update: this.update.bind(this, 'major') })
 	            ),
 	            _react2.default.createElement(
 	              'div',
