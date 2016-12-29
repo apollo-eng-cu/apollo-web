@@ -20224,7 +20224,7 @@
 	        _react2.default.createElement(
 	          "li",
 	          null,
-	          "\u0E01\u0E49\u0E32\u0E27\u0E41\u0E23\u0E01\u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E23\u0E31\u0E49\u0E27\u0E21\u0E2B\u0E32\u0E25\u0E31\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E44\u0E23 ?"
+	          "\u0E01\u0E49\u0E32\u0E27\u0E41\u0E23\u0E01\u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E23\u0E31\u0E49\u0E27\u0E21\u0E2B\u0E32\u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E44\u0E23 ?"
 	        ),
 	        _react2.default.createElement(
 	          "li",
@@ -20320,7 +20320,7 @@
 	        msg: 'ห้ามเว้นนามสกุล'
 	      },
 	      email: { pattern: /^.+@.+\..+$/,
-	        msg: 'รูปแบบอีเมลไม่ถูกต้อง'
+	        msg: 'รูปแบบอีเมล์ไม่ถูกต้อง'
 	      },
 	      telNum: { pattern: /^0\d{9}$/,
 	        msg: 'ต้องใส่เบอร์โทรศัพท์เป็นเลข 10 หลัก'
@@ -20438,7 +20438,7 @@
 	              'div',
 	              { className: 'columns' },
 	              _react2.default.createElement(TextInput, {
-	                label: '\u0E2D\u0E35\u0E40\u0E21\u0E25',
+	                label: '\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E4C',
 	                update: this.update.bind(this, 'email') }),
 	              _react2.default.createElement(TextInput, {
 	                label: '\u0E40\u0E1A\u0E2D\u0E23\u0E4C\u0E42\u0E17\u0E23\u0E28\u0E31\u0E1E\u0E17\u0E4C',

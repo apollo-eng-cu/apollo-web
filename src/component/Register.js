@@ -30,7 +30,7 @@ export default class Register extends Component {
       }
     , email:
       { pattern: /^.+@.+\..+$/
-      , msg: 'รูปแบบอีเมลไม่ถูกต้อง'
+      , msg: 'รูปแบบอีเมล์ไม่ถูกต้อง'
       }
     , telNum:
       { pattern: /^0\d{9}$/
@@ -133,7 +133,7 @@ export default class Register extends Component {
 
           <div className="columns">
             <TextInput
-              label="อีเมล"
+              label="อีเมล์"
               update={this.update.bind(this, 'email')} />
             <TextInput
               label="เบอร์โทรศัพท์"
