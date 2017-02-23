@@ -11,6 +11,7 @@ export default class Register extends Component {
       , year: ''
       , sex: ''
       , sid: ''
+      , howDoYouKnowUs: ''
       }
     , submission:
       { status: 'init' // init, error, requesting, success
@@ -51,6 +52,10 @@ export default class Register extends Component {
       { pattern: /^\d{10}$/
       , msg: 'ต้องใส่รหัสนิสิตเป็นเลข 10 หลัก'
       }
+    , howDoYouKnowUs: 
+      { pattern: /^.+$/
+      , msg: 'ห้ามเว้นสาเหตุที่คุณรู้จักเรา'
+      }
     }
 
   submit() {
@@ -63,6 +68,7 @@ export default class Register extends Component {
       , year: 'entry.186170165'
       , sex: 'entry.616671974'
       , sid: 'entry.993297866'
+      , howDoYouKnowUs: 'entry.1047668317'
       }
 
     const data = this.state.data;
@@ -148,6 +154,20 @@ export default class Register extends Component {
             <TextInput
               label="รหัสนิสิต"
               update={this.update.bind(this, 'sid')} />
+          </div>
+
+          <div className="columns">
+            <SelectInput
+              label="คุณรู้จักเราจากไหน"
+              options={
+                [ 'Facebook เพจ Apollo'
+                , 'Facebook เพจ กวศ'
+                , 'Facebook เพจ Chula Engineering'
+                , 'Line Chula Engineering'
+                , 'โปสเตอร์ในคณะ'
+                , 'กรุ๊ป Facebook ของรุ่น'
+                , 'เพื่อน']}
+              update={this.update.bind(this, 'howDoYouKnowUs')} />
           </div>
 
           {(() => {
