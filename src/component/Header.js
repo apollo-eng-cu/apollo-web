@@ -4,10 +4,10 @@ const Header = () => (
   <section className="hero is-primary is-fullheight" id="header">
     <div className="hero-body">
       <div className="container is-filter">
-        <h2 className="subtitle">Apollo Event #2</h2>
-        <h1 className="title">"จบแล้ว... ไงต่อ?"</h1>
+        <h2 className="subtitle">Apollo Event #3</h2>
+        <h1 className="title">"งานแรกต้องทำไง...งานไหนถึงจะดี ?"</h1>
         <div className="content">
-          <p>เรียนโท ทำงาน ประสบการณ์จากพี่นายช่าง</p>
+          <p>ก้าวแรกสู่โลกแห่งการทำงาน ผ่านมุมมองจากผู้มีประสบการณ์</p>
         </div>
         <br />
         <div>
