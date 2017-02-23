@@ -20,8 +20,10 @@ app.get('/', function (req, res) {
 app.post('/form', function(req, res) {
   submitGoogleForm(req.body, function(err, httpRes, body) {
     if(/freebirdFormviewerViewResponseConfirmationMessage/.test(body)) {
+      console.log(body);
       res.status(200).send();
     } else {
+      console.error(body);
       res.status(500).send();
     }
   });
@@ -33,7 +35,7 @@ app.listen(app.get('port'), function() {
 
 
 function submitGoogleForm(data, callback) {
-  var formId = '1FAIpQLScjbGT-1_OKQsGFLqDQiTPr0omv61iatJHABygBcS_F6vEzoQ';
+  var formId = '1FAIpQLSc6ujxGYMISUv5KAuRB8JJTG0zkRsAmYdkM8RZ7dp7uY5ZiPw';
   var dest = 'https://docs.google.com/forms/d/e/' + formId + '/formResponse';
 
   request.post({ url: dest, form: data}, callback);

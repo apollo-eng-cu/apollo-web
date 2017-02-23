@@ -20304,9 +20304,7 @@
 	        major: '',
 	        year: '',
 	        sex: '',
-	        sid: '',
-	        plan: '',
-	        howDoYouKnowUs: ''
+	        sid: ''
 	      },
 	      submission: { status: 'init' // init, error, requesting, success
 	        , errorMsg: []
@@ -20334,12 +20332,6 @@
 	      },
 	      sid: { pattern: /^\d{10}$/,
 	        msg: 'ต้องใส่รหัสนิสิตเป็นเลข 10 หลัก'
-	      },
-	      plan: { pattern: /^.+$/,
-	        msg: 'ห้ามเว้นแผนหลังจบปริญญาตรี'
-	      },
-	      howDoYouKnowUs: { pattern: /^.+$/,
-	        msg: 'ห้ามเว้นสาเหตุที่คุณรู้จักเรา'
 	      }
 	    }, _temp), _possibleConstructorReturn(_this, _ret);
 	  }
@@ -20356,9 +20348,7 @@
 	        major: 'entry.1559944590',
 	        year: 'entry.186170165',
 	        sex: 'entry.616671974',
-	        sid: 'entry.993297866',
-	        plan: 'entry.1351716155',
-	        howDoYouKnowUs: 'entry.270307210'
+	        sid: 'entry.993297866'
 	      };
 
 	      var data = this.state.data;
@@ -20462,17 +20452,6 @@
 	              _react2.default.createElement(TextInput, {
 	                label: '\u0E23\u0E2B\u0E31\u0E2A\u0E19\u0E34\u0E2A\u0E34\u0E15',
 	                update: this.update.bind(this, 'sid') })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'columns' },
-	              _react2.default.createElement(SelectInput, {
-	                label: '\u0E04\u0E38\u0E13\u0E27\u0E32\u0E07\u0E41\u0E1C\u0E19\u0E08\u0E30\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E2B\u0E25\u0E31\u0E07\u0E40\u0E23\u0E35\u0E22\u0E19\u0E08\u0E1A\u0E23\u0E30\u0E14\u0E31\u0E1A\u0E1B\u0E23\u0E34\u0E0D\u0E0D\u0E32\u0E15\u0E23\u0E35', options: ['ทำงาน', 'เรียนต่อ', 'ยังไม่แน่ใจ'],
-	                update: this.update.bind(this, 'plan') }),
-	              _react2.default.createElement(SelectInput, {
-	                label: '\u0E04\u0E38\u0E13\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E40\u0E23\u0E32\u0E08\u0E32\u0E01\u0E44\u0E2B\u0E19',
-	                options: ['Facebook เพจ Apollo', 'Facebook เพจ กวศ', 'Facebook เพจ Chula Engineering', 'Line Chula Engineering', 'โปสเตอร์ในคณะ', 'กรุ๊ป Facebook ของรุ่น', 'เพื่อน'],
-	                update: this.update.bind(this, 'howDoYouKnowUs') })
 	            ),
 	            function () {
 	              if (_this3.state.submission.status === 'error') {
