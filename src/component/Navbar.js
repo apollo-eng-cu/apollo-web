@@ -26,7 +26,7 @@ const Tabs = () => (
     <a className="nav-item is-tab" href="#event" data-scroll>
       Event
     </a>
-    <a className="nav-item is-tab" href="#register" data-scroll>
+    <a className="nav-item is-tab" href="https://goo.gl/forms/bbE4K378BrzbhtUz1" target="_blank">
       Register
     </a>
     <a className="nav-item is-tab" href="#contact" data-scroll>

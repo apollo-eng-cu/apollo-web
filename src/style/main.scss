@@ -151,7 +151,7 @@ nav {
 
   padding: 100px 50px;
 
-  p, h1, h2, h3, ul > li {
+  p, h1, h2, h3, h4, h5, ul > li {
       color: $white;
   }
 
@@ -159,6 +159,10 @@ nav {
     color: $yellow;
   }
 
+  .register.button {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 // register
