@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-export default class Register extends Component {
-  state =
+
+  const initialState =
     { data:
       { firstName: ''
       , lastName: ''
@@ -19,7 +19,7 @@ export default class Register extends Component {
       }
     }
 
-  validation =
+  const validation =
     { firstName:
       { pattern: /^.+$/
       , msg: 'ห้ามเว้นชื่อ'
@@ -57,6 +57,12 @@ export default class Register extends Component {
       , msg: 'ห้ามเว้นสาเหตุที่คุณรู้จักเรา'
       }
     }
+
+export default class Register extends Component {
+
+  constructor() {
+    this.state = initialState
+  }
 
   submit() {
     const inputId =

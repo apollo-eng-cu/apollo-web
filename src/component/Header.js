@@ -12,7 +12,7 @@ const Header = () => (
         <div>
           <a className="button is-info" href="#event" data-scroll>ดูรายละเอียด</a>
           <span> </span>
-          <a className="button is-primary" href="https://goo.gl/forms/bbE4K378BrzbhtUz1" target="_blank">ลงทะเบียน</a>
+          <a className="button is-primary" href="https://goo.gl/forms/bbE4K378BrzbhtUz1" target="_blank">ขึ้นทะเบียน</a>
         </div>
       </div>
     </div>
